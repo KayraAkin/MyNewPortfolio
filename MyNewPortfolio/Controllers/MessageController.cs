@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyNewPortfolio.DAL.Context;
+using MyNewPortfolio.DAL.Entities;
 
 namespace MyNewPortfolio.Controllers
 {
@@ -38,6 +39,24 @@ namespace MyNewPortfolio.Controllers
         {
             var value = _context.Messages.Find(id);
             return View(value);
+        }
+
+
+        
+        [HttpPost]
+        public IActionResult SendMessage(Message message)
+        {
+            
+            if (ModelState.IsValid) // Verilerin doğru olup olmadığını kontrol et
+            {
+                message.SendDate = DateTime.Now;
+                message.IsRead = false;
+                _context.Messages.Add(message);
+                _context.SaveChanges();
+                return Ok(); // Başarıyla veriyi kaydettik
+                
+            }
+            return BadRequest();
         }
     }
 }

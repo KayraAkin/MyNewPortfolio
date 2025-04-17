@@ -1,0 +1,50 @@
+﻿
+<div class="col-eight tab-full contact__form">
+    <form name="contactForm" id="contactForm" method="post" action="/Message/SendMessage">
+        <fieldset>
+
+            <div class="form-field">
+                <input name="NameSurname" type="text" id="NameSurname" placeholder="Adınız ve Soyadınız" value="" minlength="2" required="" aria-required="true" class="full-width">
+            </div>
+            <div class="form-field">
+                <input name="Email" type="email" id="Email" placeholder="Email" value="" required="" aria-required="true" class="full-width">
+            </div>
+            <div class="form-field">
+                <input name="Subject" type="text" id="Subject" placeholder="Konu" value="" class="full-width">
+            </div>
+            <div class="form-field">
+                <textarea name="MessageDetail" id="MessageDetail" placeholder="Mesaj İçeriği" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+            </div>
+            <div class="form-field">
+                <button type="submit" class="full-width btn--primary">Gönder</button>
+                <div class="submit-loader">
+                    <div class="text-loader">Sending...</div>
+                    <div class="s-loader">
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+    @if (ViewBag.Message != null)
+    {
+        <div class="message-success">
+            @ViewBag.Message
+        </div>
+    }
+
+    <!-- contact-warning -->
+    <div class="message-warning">
+        Something went wrong. Please try again.
+    </div>
+
+    <!-- contact-success -->
+    <div class="message-success">
+        Your message was sent, thank you!<br>
+    </div>
+
+</div>

@@ -1,9 +1,11 @@
-# Admin Panelli Dinamik Portfolyo Projesi
+# Admin Panelli Dinamik Portfolyo Projesi 
 
 ASP. Net CORE 6.0 ile geliştirilen bu dinamik portfolyo projesidir. İçerisinde Deneyimlerini, yetkinliklerini, iletişim bilgilerini dinamik bir şekilde sunmana imkan sağlamaktadır. Güncelleme, silme ve ekleme gibi süreçler
 Admin tarafında rahatlıkla gerçekleştirilebilmektedir.
+Kullanıcı panelinden Mesaj yollanabilir ve Admin panelinde kolaylıkla okunabilmektedir.
+Admin panelinde fayda sağlayabilecek birçok istatistiğe de ulaşılabilmektedir.
 
-Projede Kullandığım Teknolojiler:
+### Projede Kullandığım Teknolojiler:
 
 📌ASP.NET Core 6.0
 

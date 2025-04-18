@@ -30,6 +30,7 @@ Admin panelinde fayda sağlayabilecek birçok istatistiğe de ulaşılabilmekted
 📌JavaScript
 
 📌Ajax
+
 ![1](https://github.com/user-attachments/assets/16b54df9-9cdd-4ac3-ab50-1fcbedd8461c)
 ![2](https://github.com/user-attachments/assets/417d0408-21d4-41bc-aa58-2c8bd1e5a1e4)
 ![3](https://github.com/user-attachments/assets/c74ded09-0481-411d-9c26-d34e79d98745)

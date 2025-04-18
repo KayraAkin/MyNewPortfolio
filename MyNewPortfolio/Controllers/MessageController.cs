@@ -53,10 +53,12 @@ namespace MyNewPortfolio.Controllers
                 message.IsRead = false;
                 _context.Messages.Add(message);
                 _context.SaveChanges();
-                return Ok(); // Başarıyla veriyi kaydettik
                 
+                return Json(new { status = "OK" });
+
             }
             return BadRequest();
+            
         }
     }
 }
